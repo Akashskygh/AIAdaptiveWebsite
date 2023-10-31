@@ -5,7 +5,7 @@ let axios = require('axios');
 let app = express();
 let port = 3000; // Choose an appropriate port number
 let { Configuration, OpenAIApi } = require("openai");
-let OPENAI_API_KEY = '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'
+let OPENAI_API_KEY = 'key'
 let configuration = new Configuration({
   apiKey: OPENAI_API_KEY,
 });
