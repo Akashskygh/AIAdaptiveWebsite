@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Healthcare Information Platform</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <nav>
+        <ul class="navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Timeline</a></li>
+          <li><a href="#">Covid-19</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Export Records</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </nav>
+      <div class="main-options">
+        <h2>Main Options</h2>
+        <div class="main-options-btns">
+          <button class="main-option-btn" id="health-records-btn">Health Records</button>
+          <button class="main-option-btn" id="vaccination-proof-btn">Proof of Vaccination</button>
+          <button class="main-option-btn" id="organ-donor-btn">Organ Donor Registration</button>
+          <button class="main-option-btn" id="vaccine-card-btn">Vaccine Card</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p>
+    Welcome to our Healthcare Resource Hub, where you're invited to embark on a profound journey through the intricate tapestry of healthcare. 
+    Within our sophisticated webpage, we meticulously decipher complex medical intricacies, curating an expansive repository of knowledge tailored 
+    for both seasoned medical professionals and curious novices alike. Uncover the forefront of pharmacotherapeutic paradigms, explore genomics' pivotal 
+    role in shaping personalized medicine, and navigate the complex ethical terrain underpinning the healthcare landscape. 
+    Our cadre of expert contributors ensures a tapestry of authoritative content spanning diverse medical domains. Engage seamlessly with our dynamic 
+    multimedia spectrum, ranging from intricate surgical chronicles to interactive visual guides demystifying the intricate choreography of immunological 
+    processes. Here, you're invited to join a transformative odyssey towards unparalleled medical enlightenment, where the profundity of medical 
+    epistemology converges harmoniously with the didactic finesse of accessible erudition.
+  </p>
+  <div class="content">
+    <button class="add-link-btn">Add Quick Link</button>
+    <div id="quick-links"></div>
+  </div>
+
+<div id="option-overlay" class="overlay" style="display: none;">
+  <div class="options-container">
+    <h2>Do you need any assistance?</h2>
+    <div class="assistive-buttons">
+      <button class="option-btn" id="visibility-btn">Lack of Visibility</button>
+      <button class="option-btn" id="language-barrier-btn">Language Barrier</button>
+      <button class="option-btn" id="additional-btn">I am looking for...</button>
+    </div>
+    <div class="yes-no-buttons" style="display: none;">
+      <button id="yes-btn">Yes</button>
+      <button id="no-btn">No</button>
+    </div>
+  </div>
+</div>
+
+  <div id="response-container" class="response-container">
+    <h2>ChatGPT Response</h2>
+    <div id="response-text"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
